@@ -1,0 +1,53 @@
+.menu {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;    
+
+    @include tablet {
+        margin-left: auto;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 18px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__item-link {
+        position: relative;
+        font-family: $font-family-base;
+        font-size: 14px;
+        line-height: 1.4;
+        color: $color-gray;
+        padding: 5px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            bottom: 0;
+            left: 0;
+            transition: width $transition-duration;
+        }
+
+        @include hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 20px;
+
+        @include mobile-s {
+            display: none;
+        }
+    }
+}

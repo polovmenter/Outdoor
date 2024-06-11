@@ -1,0 +1,11 @@
+.header{
+    padding-block: 18px;
+    background-color: $color-light;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+}

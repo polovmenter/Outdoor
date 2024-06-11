@@ -1,0 +1,51 @@
+.image-section {
+    position: relative;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__items {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 16px 22px;
+        background-color: #292C32;
+        border-radius: 16px;
+
+        @include mobile {
+            left: 40px;
+            padding: 16px 18px;
+            gap: 16px;
+        }
+
+        @include mobile-s {
+            bottom: 30px;
+            right: 30px;
+            left: 30px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    &__item,
+    &__link {
+        font-size: 12px;
+        line-height: 1;
+        color: $color-light;
+    }
+
+    &__link {
+        @include hover {
+            color: $color-accent
+        }
+    }
+}

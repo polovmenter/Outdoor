@@ -1,0 +1,32 @@
+.first-screen {
+    background-image: url("../images/first-screen-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__inner {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: start;
+        min-height: 640px;
+    }
+
+    &__content {
+        max-width: 495px;
+    }
+
+    &__subtitle {
+        font-family: $font-family-accent;
+        @include fluid-text(35, 48);
+        line-height: 1.2;
+        color: $color-light;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        @include fluid-text(14, 17);
+        line-height: 1.5;
+        color: #CACCD1;
+    }
+}

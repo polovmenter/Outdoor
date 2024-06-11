@@ -1,0 +1,22 @@
+.cart-button {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &__amount {
+        font-size: 11px;
+        line-height: 18px;
+        color: $color-dark;
+        padding-inline: 6px;
+        border-radius: $border-radius;
+        background-color: $color-light;
+        transition: all $transition-duration;
+    }
+
+    @include hover {
+        & .cart-button__amount {
+            color: $color-light;
+            background-color: $color-dark;
+        }
+    }
+}

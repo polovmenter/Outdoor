@@ -1,0 +1,108 @@
+.container {
+    max-width: calc($container-width + $contaienr-padding-x * 2);
+    padding-inline: $contaienr-padding-x;
+    margin: 0 auto;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 1.4;
+    color: $color-light;
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: $color-dark;
+    border: 1px solid transparent;
+    border-radius: $border-radius-small;
+
+    @include hover {
+        color: $color-dark;
+        background-color: transparent;
+        border-color: currentColor;
+    }
+
+    &--light {
+        background-color: $color-light;
+        color: $color-dark;
+
+        @include hover {
+            color: $color-light;
+        }
+    }
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $color-dark;
+
+    &__inner {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            border-radius: 1px;
+            transition: 0.3s;
+        }
+    }
+
+    @include hover {
+
+        & .link__inner::after {
+            width: 100%;
+        }
+
+        & svg {
+            animation: link 0.5s ease;
+        }
+    }
+}
+
+@keyframes link {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.title {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $color-accent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-family: $font-family-accent;
+    @include fluid-text(30, 36);
+    line-height: 1.2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

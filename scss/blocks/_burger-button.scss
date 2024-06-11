@@ -1,0 +1,21 @@
+.burger-button {
+    display: none;
+    width: 41px;
+    height: 41px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4px;
+    background-color: transparent;
+
+    @include tablet {
+        display: flex;
+    }
+    
+    span {
+        width: 30px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $color-dark;
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #575445;
+    --color-gray: #444444;
+    --color-accent: #E6B939;
+
+    --border-radius: 8px;
+    --border-radius-small: 6px;
+
+    --font-family-base: "Poppins", sans-serif;
+    --font-family-accent: "Roboto", sans-serif;
+
+    --container-width: 1170px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.3s;
+}
+
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-gray: var(--color-gray);
+$color-accent: var(--color-accent);
+
+$border-radius: var(--border-radius);
+$border-radius-small: var(--border-radius-small);
+
+$font-family-base: var(--font-family-base), sans-serif;
+$font-family-accent: var(--font-family-accent), sans-serif;
+
+$container-width: var(--container-width);
+$contaienr-padding-x: var(--container-padding-x);
+
+$transition-duration: var(--transition-duration);

@@ -1,0 +1,56 @@
+.article {
+    position: relative;
+    max-width: 568px;
+    text-align: left;
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__image {
+        border-radius: 20px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        line-height: 1.4;
+
+        &-name {
+            font-family: $font-family-accent;
+            font-size: 13px;
+        }
+
+        &-post {
+            font-size: 11px;
+            color: $color-accent;
+        }
+    }
+
+    &__date {
+        font-size: 13px;
+        line-height: 1.4;
+        color: #6F7278;
+    }
+}

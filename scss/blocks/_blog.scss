@@ -1,0 +1,37 @@
+.blog {
+    padding: 100px 0;
+    text-align: center;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    @include desktop {
+        
+        & .article:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        & .article:nth-child(even) {
+            margin-left: auto;
+        }
+    }
+
+    & .section-heading {
+        text-align: left;
+        margin: 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 30px;
+        padding: 20px 0;
+
+        @include desktop {
+            display: block;
+        }
+    }
+}

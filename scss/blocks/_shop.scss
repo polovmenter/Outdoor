@@ -1,0 +1,28 @@
+.shop {
+    padding: 100px 0;
+    background-image: url("../images/shop-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mobile {
+        padding: 80px 0;
+    }
+
+    &__title {
+        color: $color-light;
+    }
+
+    &__subtitle {
+        color: $color-accent;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        color: $color-light;
+    }
+
+    &__button {
+        display: inline-block;
+    }
+}

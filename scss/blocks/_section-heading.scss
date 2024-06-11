@@ -1,0 +1,9 @@
+.section-heading {
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+
+    & .subtitle {
+        margin-bottom: 7px;
+    }
+}

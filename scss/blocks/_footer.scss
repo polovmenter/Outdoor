@@ -1,0 +1,132 @@
+.footer {
+    padding: 100px 0;
+    background-color: $color-dark;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $color-light;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    &__top {
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 30px;
+        padding: 75px 0 30px;
+
+        @include mobile {
+            padding: 60px 0 30px;
+        }
+
+        @include mobile-s {
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
+
+    &__item {
+        @include mobile-s {
+            text-align: center;
+        }
+
+        &-title {
+            margin-bottom: 9px;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__subscribe {
+        max-width: 460px;
+
+        @include mobile {
+           max-width: 100%;
+        }
+
+        & .footer__item-title {
+            margin-bottom: 0;
+        }
+    }
+
+    &__nav {
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 9px;
+        }
+
+        &-link {
+            padding: 3px 0;
+            color: $color-light;
+
+            @include hover {
+                color: $color-accent;
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 9px;
+    }
+
+    &__form {
+        display: flex;
+        padding: 7px;
+        border-radius: $border-radius;
+        background-color: $color-light;
+
+        &-label {
+            width: 100%;
+        }
+
+        &-input {
+            padding: 10px 14px;
+            width: 100%;
+        }
+
+        &-button {
+            padding: 10px 12px;
+            border-radius: 10px;
+            background-color: $color-dark;
+            color: $color-light;
+
+            @include hover {
+                background-color: $color-accent;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 20px;
+
+        &-link {
+            color: $color-light;
+
+            @include hover {
+                color: $color-accent;
+            }
+        }
+    }
+}

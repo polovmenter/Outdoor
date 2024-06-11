@@ -1,0 +1,36 @@
+.catalog {
+    padding: 100px 0;
+    text-align: center;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    &__items {
+        padding: 20px 0;
+    }
+
+    &__item {
+        min-height: 470px;
+        padding: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+
+        @include mobile {
+            min-height: 430px;
+        }
+
+        &-title {
+            font-family: $font-family-accent;
+            font-size: 28px;
+            line-height: 1.2;
+            margin-bottom: 9px;
+        }
+
+        &-description {
+            margin-bottom: 20px;
+        }
+    }
+}

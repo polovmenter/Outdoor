@@ -1,0 +1,26 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "media";
+@import "utils";
+@import "global";
+
+@import "blocks/header",
+        "blocks/menu",
+        "blocks/cart-button",
+        "blocks/burger-button",
+        "blocks/mobile-menu",
+        "blocks/grid",
+        "blocks/section-heading",
+        "blocks/article",
+        "blocks/first-screen",
+        "blocks/info",
+        "blocks/image-section",
+        "blocks/benefits",
+        "blocks/catalog",
+        "blocks/shop",
+        "blocks/blog",
+        "blocks/footer";
+
+
